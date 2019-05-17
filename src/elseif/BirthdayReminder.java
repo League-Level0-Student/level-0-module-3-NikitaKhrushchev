@@ -14,9 +14,19 @@ public class BirthdayReminder {
 		String momsBirthday = "January 24th";
 		String dadsBirthday = "June 9th";
 		String myBirthday = "April 16th";
-
+		String j = JOptionPane.showInputDialog("Birthday¿ \n 1 for mum, 2 for dad, 3 for you");
 		// 2. Find out which birthday the user wants and and store their response in a variable
+		if(j.equals("1")) {
+			JOptionPane.showMessageDialog(null, momsBirthday);
+		}
+if(j.equals("2")) {
+	JOptionPane.showMessageDialog(null, dadsBirthday);
+		}
+if(j.equals("3")) {
+	JOptionPane.showMessageDialog(null, myBirthday);
 	
+}
+
 		// 3. Print out what the user typed
 		
 		// 4. if user asked for "mom"
