@@ -16,7 +16,7 @@ package modulo;
 * 		Any number divisible by 3 is replaced by the word fizz 
 * 		Any number divisible by 5 is replaced by the word buzz. 
 * 		Numbers divisible by both 3 and 5 become fizzbuzz.
-* 
+
 * Print your results to the console, or using JOptionPane if you like.
 * 
 * If your code is correct, the output will be:
@@ -26,6 +26,27 @@ package modulo;
 **/
 
 public class FizzBuzz {
-
+public static void main(String[] args) {
+	for (int i = 1; i < 21; i++) {
+		if (i % 3 == 0) {
+			
+			if (i % 5 == 0) {
+				System.out.print("fizzbuzz ");
+			}
+			else {
+				System.out.print("fizz ");
+			}
+		}
+		else if (i % 5 == 0) {
+			System.out.print("buzz ");
+		}
+		if (i%3 != 0 ){
+			if (i%5 != 0) {
+				System.out.print(i+" ");
+		}
+		}
+		
+	}
+}
 }
 
